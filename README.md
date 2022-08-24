@@ -1,6 +1,4 @@
-# sib_react_005
-React and React Native Basics Kampus Merdeka
+# React and React Native Basics Kampus Merdeka
 
 <em>Panduan :</em>
-[https://bit.ly/rctn_005_h8](https://bit.ly/rctn_005_h8/ "Menuju Google Docs")
-
+[https://bit.ly/rctn_005_h8](https://bit.ly/rctn_005_h8 "Menuju Google Docs")

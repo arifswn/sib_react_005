@@ -1,0 +1,18 @@
+buat file index.js
+isikan code > hello world
+console.log("Hello World")
+
+lalu masuk ke terminal, jalankan perintah berikut :
+- npm init -y (auto)
+- npm init (manual)
+- npm install -g nodemon > otomatis memulai ulang proses
+- taruh script > "start": "nodemon index.js" > di package.json
+
+ex :
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+},
+
+pada terminal ketikan perintah berikut :
+npm run start

@@ -1,0 +1,51 @@
+tools
+--
+
+vscode
+---
+https://code.visualstudio.com/download
+
+nodejs
+---
+https://nodejs.org/en/download/
+
+install extension vscode
+---
+JavaScript (ES6) code snippets
+https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets
+
+Code Runner
+https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+
+Prettier - Code formatter
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+how to write & run (only js)
+---
+- create file index.js
+- write code :)
+- running
+
+run shorcut
+---
+- Control + Alt + N 
+- tekan F1 lalu pilih / ketik Run
+- terminal : node index.js
+
+how to run (js with nodemon)
+---
+- create file index.js
+- taruh script start pada package.json
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon index.js"
+},
+- terminal : npm run start // menjalankan index.js
+
+bantuan
+---
+- npm init //manual
+- npm init -y //auto
+- npm install //install library
+- npm install -g nodemon //auto running proses - global
+- npm i nodemon -D //local

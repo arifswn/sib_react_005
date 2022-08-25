@@ -1,0 +1,27 @@
+Array
+---
+Kalau Array itu tipe data yang kita gunakan untuk menampung data-data menggunakan urutan atau index
+dan bagusnya tipe data nya sama
+
+object
+---
+Kalau Object, ini tipe data untuk menampung data-data menggunakan key atau property, dan tipe data nya bisa apa saja,
+
+Misal kalau mobil-mobilan saya punya banyak, terus pengen saya masukin ke satu tas. 
+Berarti, tas bisa dianggap jadi array yang menampung tipe data object mobil.
+
+Terus tipe data object si mobil ini, 
+bisa punya warna cat dan nama pemilik yang tipe nya string, 
+jumlah roda yang tipe nya number, 
+sama kondisi rusak yang tipe nya boolean.
+
+
+Object dengan Function Expression
+---
+Function kan bisa kita anggep sebagai tipe data juga, 
+yang bisa kita assign atau masukin ke dalam variable. 
+Nah, ini berarti ada function yang bisa kita simpen sebagai value dari sebuah property nya object.
+
+Destructuring Object / merusak
+---
+Untuk menambahkan properti baru dalam object, kita menggunakan dot notation.

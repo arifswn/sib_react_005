@@ -1,0 +1,59 @@
+link sample lexical
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+
+pemberian nama variabel > dinamakan reserved keyword / kata kunci yang sudah dibooking
+sample
+let let = 0 //tidak boleh menggunakan kata kunci berikut (sudah dibooking)
+
+nama variabel yang boleh mengandung > angka, huruf, tanda dolar, dan underscore atau garis bawah
+hanya huruf yang boleh mengandung di depan.
+simbol spasi tidak boleh.
+
+variable seperti quantity# atau @kantor adalah nama variable yang tidak boleh kita gunakan. 
+Akan tetapi price$ atau home_alone, itu boleh kita pakai.
+
+penamaan variable yang panjang, yang terdiri dari dua kata atau lebih, 
+bisa menggunakan underscore seperti contoh home_alone
+
+
+pricePerQuantity biasa dikenal dengan istilah camel case,
+dimana setiap huruf yang menjadi pemisah tiap kata > kita berikan huruf besar. 
+Kalau yang menggunakan underscore dikenal dengan istilah snake case.
+
+style case kode program
+---------------------
+
+snake_case
+menggunakan garis bawah atau underscore (_)
+---------------------
+ini_penulisan_snake_case()
+The_quick_brown_fox_jumps_over_the_lazy_dog
+nama_variabel
+Nama_class
+
+Camel Case
+semua suku kata menyatu dan terdapat huruf kapital untuk memisahnya
+------------------------
+TheQuickBrownFoxJumpsOverTheLazyDog
+iniPenulisanCamelCase();
+NamaClass
+namaVariabel
+iPhone
+eBay
+camelCase
+
+Kebab Case
+menggunakan tanda minus (-) untuk memisah suku kata
+----------------------------
+ini-gaya-kebab-case
+The-quick-brown-fox-jumps-over-the-lazy-dog
+btn-primary
+-moz-transition
+
+All caps
+All Caps artinya semua kapital.
+----------------------------
+PI
+DATABASE
+HOSTNAME
+URL_STRING

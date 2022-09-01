@@ -1,0 +1,44 @@
+step pertama
+---
+1. cek npm dan npx nya
+2. create global react
+3. npm install -g create-react-app (auto create react app)
+
+cek status proses install
+---
+create-react-app –version
+
+buat project react
+---
+create-react-app hello-react
+>> akan terbuat sebuah project dengan nama "hello-react"
+
+menuju ke folder
+---
+cd hello-react
+npm start  //untuk running
+
+remove unused library
+---
+npx depcheck
+
+/* --------------------------------------------- */
+
+step kedua
+---
+1. create folder hello-webpack
+2. npm init -y
+3. install react dan react dom library
+    npm install react react-dom --save // ini versi 18 > membutuhkan es7
+    npm install react@17.0.0 react-dom@17.0.0 // ini versi 17 > membutuhkan es6
+4. instal depedency development
+    npm install webpack webpack-cli webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin mini-css-extract-plugin --save-dev
+5. create folder src (didalem folder src)
+    > create file index.html
+    > create file index.js
+6. create file (didalem folder hello-webpack)
+    > create file .babelrc
+    > create file webpack.config.js
+7. npm run start //running apps
+
+

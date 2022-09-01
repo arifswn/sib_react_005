@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar ReactJs</title>
+
+    <!-- script -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+        .header {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-family: Lato, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- tag yang digunakan untuk menampilkan reactjs yang dibuat -->
+    <div id="app"></div>
+
+    <!-- tag yang digunakan untuk menulis code reactjs -->
+    <script type="text/babel">
+
+        // first
+        function firstJSX() {
+            // membuat elemen JSX
+            let message = <h2>Belajar menggunakan JSX pada React</h2>;
+
+            // render elemen ke DOM
+            ReactDOM.render(message, document.getElementById("app"));
+        }
+
+        // second
+        function secondJSX() {
+            let header = ( //mengapitnya elements dengan tanda kurung.
+                <header className="header">
+                    <h1>Belajar menggunakan JSX pada React</h1>
+                    <p>Tutorial Reactjs untuk Pemula</p>
+                </header>
+            );
+
+            ReactDOM.render(header, document.getElementById("app"));
+        }
+
+        firstJSX() //first call
+        secondJSX() //second call
+
+
+        // Apakah kita harus & perlu menggunakan JSX?
+        // jika kita tidak menggunakan JSX dalam membuat aplikasi reactjs,
+        // kita akan sedikit kesulitan, karena kita harus menuliskannya seperti ini:
+
+        function noJSX() {
+            "use strict";
+
+            let message = React.createElement(
+                "p",
+                null,
+                "Hello World... !!"
+            )
+            ReactDOM.render(message, document.getElementById("app"))
+        }
+
+        noJSX();
+
+        /*  apa itu babel ?
+            Babel adalah sebuah Javascript compiler.
+            Babel digunakan untuk mengkonversi ECMAScript 2015+
+            agar kompatibel dengan browser yang belum mendukung ECMAScript 2015+.
+
+            Pada kasus JSX yang kita tulis diatas,
+            jika kita tidak menambahkan babel,
+            browser tidak akan dapat menjalankan atau mengerti kode yang kita tulis.
+
+            sehingga layar browser tidak akan menampilkan apapun 
+            karena menganggap script yang kita tulis tidak dikenali. 
+            
+            Oleh karena jika kita menggunakan JSX, kita membutuhkan babel.
+
+        */
+
+        // JSX SEBELUM dicompile
+        ReactDOM.render(
+            <h1>Hello World...</h1>,
+            document.getElementById('app')
+        );
+
+        // // JSX SESUDAH dicompile oleh babel
+        "use strict";
+        ReactDOM.render( /*#__PURE__*/ React.createElement(
+            "h1",
+            null,
+            "Hello World..."
+        ), document.getElementById('app'));
+    </script>
+</body>
+
+</html>

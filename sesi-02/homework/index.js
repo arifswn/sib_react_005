@@ -73,26 +73,15 @@ const videoData = [
     }
 ];
 
-//this function takes a suspect as paramater and returns all the falsy rooms
-const flatenAndFilter = (suspect) => {
-    return _.reduce(
-      suspect.rooms,
-      (memo, room) => {
-        _.each(room, (value, key) => {
-          if (!value) memo.push(key);
-        });
-        return memo;
-      },
-      []
-    );
-  };
-  
-const flattenedNewDevelopment = _.map(videoData, flatenAndFilter);
-
-console.log(flattenedNewDevelopment)
-// videoData.forEach(element=>{
-//     if(element.rooms[0].kitchen==false && element.present==true){
-//       console.log(element.name)
-//     }
-//   })
-
+const suspectObjPresent = videoData.filter(suspectObj => { return suspectObj.present })
+const dataName = suspectObjPresent.map(suspectObj => {
+    let nama = suspectObj.name.toString()
+    let present = suspectObj.present.toString()
+    let rooms = suspectObj.rooms
+    var item = {
+        namaNew: nama, 
+        presentNew: present,
+        roomNew: rooms
+    }
+    console.log(item)
+})

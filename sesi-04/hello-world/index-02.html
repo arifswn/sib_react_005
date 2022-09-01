@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar ReactJs</title>
+
+    <!-- script -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <!-- tag yang digunakan untuk menampilkan reactjs yang dibuat -->
+    <div id="app"></div>
+
+    <!-- tag yang digunakan untuk menulis code reactjs -->
+    <script type="text/babel">
+        //step one call komponen
+        function MessageBox() {
+            return (
+                <div>
+                    <h1>Hei, Selamat Datang...</h1>
+                </div>
+            );
+        }
+
+        // ReactDOM.render(<MessageBox />, document.getElementById("app"));
+
+        //step two call komponen with class
+        // membuat komponen dengan class
+        class Header extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <h1>Hello World</h1>
+                        <h2>Belajar Dasar ReactJs</h2>
+                        <p>Membuat komponen dengan class.</p>
+                    </div>
+                );
+            }
+        }
+
+        // render komponen ke RealDOM
+        // ReactDOM.render(<Header />, document.getElementById("app"));
+
+
+        //step three call komponen with class in konstruktor
+        class HeaderConstructor extends React.Component {
+            constructor() {
+                super();
+                // membuat objek state
+                this.state = {
+                    title: "Belajar ReactJs",
+                    subTitle: "Belajar membuat objek state"
+                };
+            }
+
+            render() {
+                return (
+                    <div>
+                        <h1>{this.state.title}</h1>
+                        <h2>{this.state.subTitle}</h2>
+                    </div>
+                );
+            }
+        }
+
+        // render komponen ke RealDOM
+        // ReactDOM.render(<HeaderConstructor />, document.getElementById("app"));
+
+
+        //step four call komponen with class in konstruktor (change/setState)
+        class HeaderConstructorState extends React.Component {
+            constructor() {
+                super();
+                // membuat objek state
+                this.state = {
+                    title: "Belajar ReactJs",
+                    subTitle: "Belajar membuat objek state"
+                };
+            }
+
+            changeTitle = () => {
+                this.setState({
+                    title: "Semangat Ya",
+                    subTitle: "Belajar ReactJs..."
+                })
+            }
+
+            render() {
+                return (
+                    <div>
+                        <h1>{this.state.title}</h1>
+                        <h2>{this.state.subTitle}</h2>
+                        <button onClick={this.changeTitle}>Change Title</button>
+                    </div>
+                );
+            }
+        }
+
+        // render komponen ke RealDOM
+        ReactDOM.render(<HeaderConstructorState />, document.getElementById("app"));
+
+    </script>
+</body>
+
+</html>

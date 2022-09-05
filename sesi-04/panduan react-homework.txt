@@ -1,0 +1,78 @@
+step instalasi react 
+---
+
+yang perlu dihapus saat pertama create react?
+---
+App.cs
+App.test.js
+logo.svg
+reportWebVitals.js
+setupTest.js
+logo192.png
+logo512.png
+
+add bootstrap
+----
+npm install react-bootstrap@2.0.0-beta.5 bootstrap@5.1.0
+npm install react-router-dom@5.2.0
+
+add eslint
+---
+npm install -g eslint //untuk global
+npm install eslint --save-dev //untuk devDevelopment
+npx eslint --init //set eslint
+
+clean and verify
+---
+npm cache clean --force
+after that run
+npm cache verify
+if it doesn't work then manually delete %appdata%\npm-cache folder.
+and install npm install npm@latest -g (additionalt)
+
+apa itu eslint
+----
+Lint atau linter adalah 
+alat untuk menganalisa source code 
+untuk menandai errors, bug, 
+code convention dan memverifikasi kualitas kode
+
+kenapa harus pasang eslint
+---
+dengan kita mengintegrasi projek kita dengan ESLint 
+kode yang kita buat akan menjadi lebih konsisten 
+dan minim dengan bug 
+jika kita mengikuti anjuran dari ESLint.
+reference : https://rivki.dev/blog/kenalan-dengan-eslint-linter-javascript
+
+jika terjadi masalah saat instalasi eslint :
+https://github.com/airbnb/javascript/issues/1834
+    untuk react version 17.0.2
+depedency eslint :
+    "eslint": "^5.12.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.11.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+reference : https://www.youtube.com/watch?v=wHd76UPvyRM
+
+cek kode dengan eslint, tambahkan pada script di package.json,
+kita akan mengecek file js/jsx kita di sub folder > src/**/* :
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --fix"
+
+jika membutuhkan yarn
+(Yarn adalah sistem pengemasan perangkat lunak yang dikembangkan pada tahun 2016 oleh Facebook
+untuk lingkungan runtime JavaScript Node.js)
+---
+npm install --global yarn
+yarn --version
+
+
+config .eslintrs.json > hasil generate dari > npx eslint --init
+---
+/*  Jest adalah pustaka pengujian JavaScript terbuka dari Facebook.
+    Slogannya adalah "Pengujian JavaScript yang Menyenangkan".
+
+    "jest": true
+*/

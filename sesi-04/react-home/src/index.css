@@ -1,0 +1,36 @@
+body {
+  background-color: antiquewhite !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.centered {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.photo {
+  height: 200px;
+  width: 200px;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+p {
+  color: lightslategray;
+}
+
+.not-allowed{
+  cursor: not-allowed! important;
+     
+}

@@ -1,0 +1,37 @@
+
+//buat direktori baru
+npm init --yes
+
+//install package
+npm install express
+npm install mongoose
+
+//install package as a development dependency by using the npm install with the --save-dev flag
+npm install morgan --save-dev
+
+//cek paket yang diinstal 
+npm list
+or is the shorter
+npm ls
+
+//cek semua paket yang diinstal tanpa ketergantungannya
+npm list --depth=0
+
+//display only dependency tree for packages in dependencies, 
+//you use the --prod or --production flag 
+npm list --prod
+combine with --depth=0 > npm list --prod --depth=0
+
+//show the dependency tree for packages in the devDependencies, 
+//you use the npm list command with the --dev or --development flag
+npm list --dev
+
+//to list the global packages, you use the npm list command with the --global flag:
+npm list --global
+
+//format the output of the installed packages in JSON format,
+//you use the npm list command with the --json flag:
+npm list --depth=0 --json
+
+reference:
+https://www.javascripttutorial.net/nodejs-tutorial/npm-list/

@@ -1,0 +1,7 @@
+create project react
+---
+create-react-app hello-state
+
+add bootstrap
+---
+import "bootstrap/dist/css/bootstrap.min.css"

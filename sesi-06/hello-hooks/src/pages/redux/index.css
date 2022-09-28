@@ -1,0 +1,30 @@
+.wrapper-redux {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper-section {
+    justify-content: space-between;
+}
+
+.wrapper-redux .redux-text {
+    text-align: center;
+}
+
+.wrapper-redux .redux-button {
+    text-align: center;
+}
+
+.wrapper-redux .redux-button>* {
+    background-color: antiquewhite;
+    margin-inline: 1em;
+    border-radius: 25px;
+    border: 0;
+    padding: 1em;
+}
+
+.wrapper-redux .redux-button>*:active {
+    background-color: rgb(172, 163, 152);
+}

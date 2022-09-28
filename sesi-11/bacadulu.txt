@@ -1,0 +1,70 @@
+Redux adalah salah satu state management
+--
+Redux juga menawarkan tools untuk masing-masing browser contoh chrome redux devtools untuk memonitor keadaan state kita saat ini.
+
+Package middleware-nya ?
+--
+sudah banyak di kembangkan gratis dan siap digunakan untuk memudahkan kita mengembangkan aplikasi yang kita sedang kerjakan.
+
+
+mengenai Redux, kenapa redux?
+--
+1. sebenarnya semua state management itu cuman tools.
+
+2. karena Redux memiliki dokumentasi yang bagus, komunitas yang luas dan banyak digunakan oleh perushaan besar yang menggunakan Javascript sebagai basis kode aplikasi mereka.
+
+3. memudahkan kita untuk melakukan development seperti redux-thunk, redux-saga, redux-persist dan sebagainya.
+
+4. bagaiaman setup nya :
+  1. npm install redux react-redux
+  2. file store (menyimpan state)
+  sample : /src/redux/store.js
+  3. types (ada yang menyebut sebagai constants atau types dimana kita mendeklarasi setiap kegiatan yang akan terjadi pada reducer yang kita buat)
+    hanya mengexport constanta dengan nama kegiatan tertentu.
+  sample : /src/redux/types
+  4. actions (semua action atau kegiatan atau juga bisa disebut kejadian)
+  sample : /src/redux/actions/
+  5. reducer (tempat mengeksekusi perintah untuk memanipulasi state | menangani semua perubahan status global | merubah state menjadi respon yang terjadi ketika Action di dispatch() | combineReducers sebuah function dari package redux untuk menggabungkan object-object state yang kita miliki)
+  sample : /src/redux/reducers/
+  6. Provider (melibatkan build komponen apa pun tentang keadaan di dalam Provider, meneruskan prop ke Provider store, yang disebut sama dengan store variabel | menghubungkan ke variabel global)
+
+kesimpulan redux :
+--
+bahwa redux menyimpan semua bagian dari apa yang didefinisikan sebagai 'status' di satu tempat… yang disebut store. 
+Redux menggunakan sesuatu yang disebut reducer untuk mengontrol apa dan bagaimana status diubah berdasarkan yang dispatch / dikirim ke peredam.
+
+LogRocket?
+---
+logrocket / alat logging Redux 
+memungkinkan kit memutar ulang masalah seolah-olah itu terjadi di browser Anda sendiri. 
+bagaimana menebak kesalahan yang terjadi, atau meminta tangkapan layar dan dump log pengguna.
+
+dengan adanya LogRocket :
+memungkinkan kita memutar ulang tindakan + status Redux, permintaan jaringan, log konsol, dan melihat video yang dilihat pengguna.
+
+reference log rocket/reduxlog : https://npm.io/package/redux-logger
+
+prev state/status sebelumnya — Status sebelum tindakan dikirim
+action/tindakan — jenis tindakan dengan muatan apa saja
+next/state keadaan berikutnya — keadaan setelah tindakan dipenuhi yaitu, setelah perubahan apa pun.
+
+apa itu redux thunk
+--
+Redux Thunk adalah sebuah middleware yang memungkinkan Anda untuk menulis Action yang mengembalikan function, bukan action.
+
+Redux mengembalikan dalam bentuk props actions yang telah di definisikan oleh Reducers namun masalahnya jika kita ingin mengembalikan sebuah function, redux tidak dapat menanganinya, oleh karena itu kita membutuhkan middleware yang berfungsi untuk mengembalikan action
+
+// Not Using Redux Thunk
+let add = 1 + 2
+console.log(add)
+
+// Used Redux Thunk or Middleware Redux
+function addFunc(num1, num2){
+  return num1 + num2
+}
+console.log(addFunc(1,7))
+console.log(addFunc(9,7))
+
+kesimpulan : 
+jika kita menggunakan Redux Thunk maka kita dapat mengembalikan nilai nya menjadi function bukan hanya sebagai result.
+

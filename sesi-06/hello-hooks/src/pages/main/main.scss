@@ -1,0 +1,8 @@
+.main-app-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .content-wrapper{
+        flex: 1;
+    }
+}

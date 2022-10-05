@@ -13,7 +13,7 @@ const Header = () => {
                 aria-current="page"
               >
                 Home
-              </a>
+              </a>c
             </li>
 
             <li className="nav-item">

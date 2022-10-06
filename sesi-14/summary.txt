@@ -1,0 +1,30 @@
+apa sih expo itu ?
+---
+secara singkat React Native adalah framework JavaScript 
+yang digunakan untuk mengembangkan aplikasi mobile 
+yang dapat berjalan pada platform berbasis Android dan iOS sekaligus.
+
+Expo adalah adalah framework yang memudahkan Developer 
+dalam mengembangkan aplikasi dengan React Native. 
+
+Expo sendiri merupakan suatu set tools, library, dan services 
+yang digunakan untuk memudahkan kode React Native apps. 
+
+Berikut beberapa keunggulan menggunakan Expo.
+---
+1. Expo menggunakan SDK Expo, jadi kita tidak membutuhkan Android Studio dan Xcode.
+2. Pengaturan aplikasi lebih mudah, sehingga bisa langsung ditambahkan pada file app.json.
+3. Mode debug aplikasi dapat dijalankan langsung di device 
+    dengan aplikasi Expo pada Android dan iOS 
+    dengan membagikan link ataupun QR Code 
+    dari project yang telah dibuat.
+4. Fitur Push Notification dan 
+    Social Media Authentication (facebook login) 
+    sudah disediakan oleh Expo.
+5. Beberapa library seperti maps, camera, 
+    dan gallery sudah di sediakan Expo 
+    sehingga tidak perlu menambahkan library 
+    serta juga dapat berjalan pada Android maupun iOS.
+6. Membuat versi rilis aplikasi menjadi lebih mudah 
+    karena dilakukan oleh server Expo 
+    (Expo akan memberikan link untuk mendownload versi rilis aplikasi kita)

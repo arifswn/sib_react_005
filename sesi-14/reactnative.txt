@@ -1,0 +1,28 @@
+step :
+---
+1. apa itu react native ?
+2. environment setup
+3. expo
+    - workflow
+    - limitation
+    - installation
+4. emulator / simulator setup
+5. folder structure
+6. core component
+7. component
+    - view
+    - text
+    - image
+    - button
+    - etc
+8. styling
+
+reference :
+---
+environment setup : https://reactnative.dev/docs/environment-setup 
+expo : https://docs.expo.dev/
+expo workflow : https://docs.expo.dev/introduction/managed-vs-bare/
+expo limitation : https://docs.expo.dev/introduction/why-not-expo/
+expo install : https://docs.expo.dev/get-started/installation/
+expo component : https://reactnative.dev/docs/intro-react-native-components
+android studio :https://developer.android.com/studio

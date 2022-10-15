@@ -1,5 +1,4 @@
-import { Text, View } from "react-native"
-import { StyleSheet } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 
 export default ProfileScreen = ({ navigation, route }) => {
   return (
